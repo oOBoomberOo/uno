@@ -1,0 +1,8 @@
+execute align xyz positioned ~0.5 ~ ~0.5 run summon armor_stand ~ ~-0.169 ~ {Tags:["boomber.uno_game.table"], ArmorItems:[{},{},{},{id:"minecraft:note_block", Count:1b, tag:{boomber:{id:"uno_table", from:"boomber:uno_game", author:"boomber", uno_game:{current_card:{}, checking_card:{} }}}}], Invisible:1b, NoGravity:1b, Marker:1b, NoBasePlate:1b, Invulnerable:1b, Small:1b, Passengers:[{id:"minecraft:armor_stand", Tags:["boomber.uno_game.table_display"], Invisible:1b, NoGravity:1b, NoBasePlate:1b, Invulnerable:1b, Small:1b, CustomNameVisible:1b, CustomName:"{\"text\":\"Uno!\"}"},{id:"minecraft:villager", Tags:["boomber.uno_game.table_interaction"], Invulnerable:1b, NoAI:1b, Silent:1b, NoGravity:1b, Offers:{ Recipes:[]} }]}
+execute align xyz positioned ~0.5 ~ ~0.5 run particle cloud ~ ~ ~ 0.5 0.5 0.5 0.2 60 normal @a
+execute align xyz positioned ~0.5 ~ ~0.5 if block ~ ~-1 ~ minecraft:oak_planks run setblock ~ ~ ~ oak_slab
+execute align xyz positioned ~0.5 ~ ~0.5 if block ~ ~-1 ~ minecraft:spruce_planks run setblock ~ ~ ~ spruce_slab
+execute align xyz positioned ~0.5 ~ ~0.5 if block ~ ~-1 ~ minecraft:jungle_planks run setblock ~ ~ ~ jungle_slab
+execute align xyz positioned ~0.5 ~ ~0.5 if block ~ ~-1 ~ minecraft:birch_planks run setblock ~ ~ ~ birch_slab
+execute align xyz positioned ~0.5 ~ ~0.5 if block ~ ~-1 ~ minecraft:acacia_planks run setblock ~ ~ ~ acacia_slab
+execute align xyz positioned ~0.5 ~ ~0.5 if block ~ ~-1 ~ minecraft:dark_oak_planks run setblock ~ ~ ~ dark_oak_slab

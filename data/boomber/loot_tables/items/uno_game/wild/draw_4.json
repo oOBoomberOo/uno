@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:item",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "+4 - wild",
+                "color": "light_purple",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:8081048, boomber:{id:\"uno_card\", from:\"boomber:uno_game\", author:\"boomber\", uno_game:{color:[4], card:[12], playable:{ colors:[0, 1, 2, 3, 4], cards:[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}}}}"
+            }
+          ],
+          "name": "minecraft:paper"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+execute as @s as @e[type=armor_stand,tag=boomber.uno_game.table,limit=1,distance=..8,sort=nearest] store result score #bb.uno.current.card bb.variable run data get entity @s ArmorItems[{tag:{boomber:{id:"uno_table"}}}].tag.boomber.uno_game.current_card.boomber.uno_game.card[0]
+execute as @s as @e[type=armor_stand,tag=boomber.uno_game.table,limit=1,distance=..8,sort=nearest] store result score #bb.uno.current.color bb.variable run data get entity @s ArmorItems[{tag:{boomber:{id:"uno_table"}}}].tag.boomber.uno_game.current_card.boomber.uno_game.color[0]
+execute as @s as @e[type=armor_stand,tag=boomber.uno_game.table,limit=1,distance=..8,sort=nearest] store result score #bb.uno.checking.card bb.variable run data get entity @s ArmorItems[{tag:{boomber:{id:"uno_table"}}}].tag.boomber.uno_game.checking_card.boomber.uno_game.card[0]
+execute as @s as @e[type=armor_stand,tag=boomber.uno_game.table,limit=1,distance=..8,sort=nearest] store result score #bb.uno.checking.color bb.variable run data get entity @s ArmorItems[{tag:{boomber:{id:"uno_table"}}}].tag.boomber.uno_game.checking_card.boomber.uno_game.color[0]
+
+execute as @s if score #bb.uno.checking.color bb.variable matches 4 run function boomber:uno_game/event/game/check/wild
+execute as @s if score #bb.uno.checking.color bb.variable matches 0..3 run function boomber:uno_game/event/game/check/normal

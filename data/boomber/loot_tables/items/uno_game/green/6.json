@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:item",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "6 - green",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:8081018, boomber:{id:\"uno_card\", from:\"boomber:uno_game\", author:\"boomber\", uno_game:{color:[1], card:[6], playable:{ colors:[1], cards:[6]}}}}"
+            }
+          ],
+          "name": "minecraft:paper"
+        }
+      ]
+    }
+  ]
+}

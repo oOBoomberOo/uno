@@ -1,0 +1,61 @@
+execute as @s as @e[type=armor_stand,tag=boomber.uno_game.table,limit=1,distance=..8,sort=nearest] run tag @s add boomber.uno_game.playing
+execute as @s run function boomber:uno_game/event/draw/draw
+
+execute as @s run scoreboard players set @s bb.interact 0
+execute as @s run tellraw @a[tag=boomber.uno_game.joined,distance=..8] [{"selector":"@s"},{"text":" is drawing..."}]
+
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 0 if score #bb.uno.card bb.variable matches 0 run tellraw @s [{"text":"You draw "},{"text":"0 - red","color":"red"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 0 if score #bb.uno.card bb.variable matches 1 run tellraw @s [{"text":"You draw "},{"text":"1 - red","color":"red"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 0 if score #bb.uno.card bb.variable matches 2 run tellraw @s [{"text":"You draw "},{"text":"2 - red","color":"red"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 0 if score #bb.uno.card bb.variable matches 3 run tellraw @s [{"text":"You draw "},{"text":"3 - red","color":"red"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 0 if score #bb.uno.card bb.variable matches 4 run tellraw @s [{"text":"You draw "},{"text":"4 - red","color":"red"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 0 if score #bb.uno.card bb.variable matches 5 run tellraw @s [{"text":"You draw "},{"text":"5 - red","color":"red"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 0 if score #bb.uno.card bb.variable matches 6 run tellraw @s [{"text":"You draw "},{"text":"6 - red","color":"red"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 0 if score #bb.uno.card bb.variable matches 7 run tellraw @s [{"text":"You draw "},{"text":"7 - red","color":"red"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 0 if score #bb.uno.card bb.variable matches 8 run tellraw @s [{"text":"You draw "},{"text":"8 - red","color":"red"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 0 if score #bb.uno.card bb.variable matches 9 run tellraw @s [{"text":"You draw "},{"text":"9 - red","color":"red"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 0 if score #bb.uno.card bb.variable matches 10 run tellraw @s [{"text":"You draw "},{"text":"+2 - red","color":"red"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 0 if score #bb.uno.card bb.variable matches 11 run tellraw @s [{"text":"You draw "},{"text":"Skip - red","color":"red"}]
+
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 1 if score #bb.uno.card bb.variable matches 0 run tellraw @s [{"text":"You draw "},{"text":"0 - green","color":"green"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 1 if score #bb.uno.card bb.variable matches 1 run tellraw @s [{"text":"You draw "},{"text":"1 - green","color":"green"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 1 if score #bb.uno.card bb.variable matches 2 run tellraw @s [{"text":"You draw "},{"text":"2 - green","color":"green"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 1 if score #bb.uno.card bb.variable matches 3 run tellraw @s [{"text":"You draw "},{"text":"3 - green","color":"green"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 1 if score #bb.uno.card bb.variable matches 4 run tellraw @s [{"text":"You draw "},{"text":"4 - green","color":"green"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 1 if score #bb.uno.card bb.variable matches 5 run tellraw @s [{"text":"You draw "},{"text":"5 - green","color":"green"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 1 if score #bb.uno.card bb.variable matches 6 run tellraw @s [{"text":"You draw "},{"text":"6 - green","color":"green"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 1 if score #bb.uno.card bb.variable matches 7 run tellraw @s [{"text":"You draw "},{"text":"7 - green","color":"green"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 1 if score #bb.uno.card bb.variable matches 8 run tellraw @s [{"text":"You draw "},{"text":"8 - green","color":"green"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 1 if score #bb.uno.card bb.variable matches 9 run tellraw @s [{"text":"You draw "},{"text":"9 - green","color":"green"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 1 if score #bb.uno.card bb.variable matches 10 run tellraw @s [{"text":"You draw "},{"text":"+2 - green","color":"green"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 1 if score #bb.uno.card bb.variable matches 11 run tellraw @s [{"text":"You draw "},{"text":"Skip - green","color":"green"}]
+
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 2 if score #bb.uno.card bb.variable matches 0 run tellraw @s [{"text":"You draw "},{"text":"0 - blue","color":"blue"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 2 if score #bb.uno.card bb.variable matches 1 run tellraw @s [{"text":"You draw "},{"text":"1 - blue","color":"blue"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 2 if score #bb.uno.card bb.variable matches 2 run tellraw @s [{"text":"You draw "},{"text":"2 - blue","color":"blue"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 2 if score #bb.uno.card bb.variable matches 3 run tellraw @s [{"text":"You draw "},{"text":"3 - blue","color":"blue"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 2 if score #bb.uno.card bb.variable matches 4 run tellraw @s [{"text":"You draw "},{"text":"4 - blue","color":"blue"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 2 if score #bb.uno.card bb.variable matches 5 run tellraw @s [{"text":"You draw "},{"text":"5 - blue","color":"blue"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 2 if score #bb.uno.card bb.variable matches 6 run tellraw @s [{"text":"You draw "},{"text":"6 - blue","color":"blue"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 2 if score #bb.uno.card bb.variable matches 7 run tellraw @s [{"text":"You draw "},{"text":"7 - blue","color":"blue"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 2 if score #bb.uno.card bb.variable matches 8 run tellraw @s [{"text":"You draw "},{"text":"8 - blue","color":"blue"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 2 if score #bb.uno.card bb.variable matches 9 run tellraw @s [{"text":"You draw "},{"text":"9 - blue","color":"blue"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 2 if score #bb.uno.card bb.variable matches 10 run tellraw @s [{"text":"You draw "},{"text":"+2 - blue","color":"blue"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 2 if score #bb.uno.card bb.variable matches 11 run tellraw @s [{"text":"You draw "},{"text":"Skip - blue","color":"blue"}]
+
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 3 if score #bb.uno.card bb.variable matches 0 run tellraw @s [{"text":"You draw "},{"text":"0 - yellow","color":"yellow"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 3 if score #bb.uno.card bb.variable matches 1 run tellraw @s [{"text":"You draw "},{"text":"1 - yellow","color":"yellow"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 3 if score #bb.uno.card bb.variable matches 2 run tellraw @s [{"text":"You draw "},{"text":"2 - yellow","color":"yellow"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 3 if score #bb.uno.card bb.variable matches 3 run tellraw @s [{"text":"You draw "},{"text":"3 - yellow","color":"yellow"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 3 if score #bb.uno.card bb.variable matches 4 run tellraw @s [{"text":"You draw "},{"text":"4 - yellow","color":"yellow"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 3 if score #bb.uno.card bb.variable matches 5 run tellraw @s [{"text":"You draw "},{"text":"5 - yellow","color":"yellow"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 3 if score #bb.uno.card bb.variable matches 6 run tellraw @s [{"text":"You draw "},{"text":"6 - yellow","color":"yellow"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 3 if score #bb.uno.card bb.variable matches 7 run tellraw @s [{"text":"You draw "},{"text":"7 - yellow","color":"yellow"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 3 if score #bb.uno.card bb.variable matches 8 run tellraw @s [{"text":"You draw "},{"text":"8 - yellow","color":"yellow"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 3 if score #bb.uno.card bb.variable matches 9 run tellraw @s [{"text":"You draw "},{"text":"9 - yellow","color":"yellow"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 3 if score #bb.uno.card bb.variable matches 10 run tellraw @s [{"text":"You draw "},{"text":"+2 - yellow","color":"yellow"}]
+execute as @s if score #bb.uno.wild bb.variable matches ..90 if score #bb.uno.color bb.variable matches 3 if score #bb.uno.card bb.variable matches 11 run tellraw @s [{"text":"You draw "},{"text":"Skip - yellow","color":"yellow"}]
+
+execute as @s if score #bb.uno.wild bb.variable matches 91.. if score #bb.uno.card bb.variable matches 0 run tellraw @s [{"text":"You draw "},{"text":"+4 - wild","color":"light_purple"}]
+
+execute as @s as @e[type=armor_stand,tag=boomber.uno_game.table,limit=1,distance=..8,sort=nearest] run function boomber:uno_game/event/game/next_turn
