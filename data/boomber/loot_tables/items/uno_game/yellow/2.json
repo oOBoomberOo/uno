@@ -17,7 +17,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:8081028, boomber:{id:\"uno_card\", from:\"boomber:uno_game\", author:\"boomber\", uno_game:{color:[3], card:[2], playable:{ colors:[3], cards:[2]}}}}"
+              "tag": "{CustomModelData:8081038, boomber:{id:\"uno_card\", from:\"boomber:uno_game\", author:\"boomber\", uno_game:{color:[3], card:[2], playable:{ colors:[3], cards:[2]}}}}"
             }
           ],
           "name": "minecraft:paper"

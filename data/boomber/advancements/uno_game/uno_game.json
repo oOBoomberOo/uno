@@ -1,9 +1,9 @@
 {
 	"display": {
-		"title": "Uno v0.0.1",
+		"title": "Uno v0.0.2",
 		"description": "Uno in minecraft!",
 		"icon": {
-			"item": "minecraft:stone"
+			"item": "minecraft:note_block"
 		},
 		"show_toast": false,
 		"announce_to_chat": false

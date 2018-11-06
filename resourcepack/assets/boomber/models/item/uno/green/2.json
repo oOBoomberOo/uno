@@ -1,0 +1,6 @@
+{
+	"parent": "boomber:item/uno/card",
+	"textures": {
+		"layer0": "boomber:item/uno/green/2"
+	}
+}
