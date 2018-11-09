@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "Skip - green",
+                "text": "Skip",
                 "color": "green",
                 "italic": false
               }

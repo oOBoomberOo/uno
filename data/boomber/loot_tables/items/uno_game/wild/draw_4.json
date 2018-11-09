@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "+4 - wild",
+                "text": "+4",
                 "color": "light_purple",
                 "italic": false
               }

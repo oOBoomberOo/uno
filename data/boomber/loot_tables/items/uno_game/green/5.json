@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "5 - green",
+                "text": "5",
                 "color": "green",
                 "italic": false
               }
