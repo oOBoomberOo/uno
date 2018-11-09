@@ -2,3 +2,5 @@ execute as @s run tellraw @a[tag=boomber.uno_game.joined,distance=..8] [{"select
 execute as @s run tellraw @s [{"text":"You play a "},{"text":"wild","color":"light_purple"},{"text":", choose the color you want!","color":"white"}]
 execute as @s run scoreboard players enable @s bb.wildColor
 execute as @s run tellraw @s [{"text":"[red]","color":"red","clickEvent":{"action":"run_command", "value":"/trigger bb.wildColor set 1"}},{"text":" "},{"text":"[green]","color":"green","clickEvent":{"action":"run_command", "value":"/trigger bb.wildColor set 2"}},{"text":" "},{"text":"[blue]","color":"blue","clickEvent":{"action":"run_command", "value":"/trigger bb.wildColor set 3"}},{"text":" "},{"text":"[yellow]","color":"yellow","clickEvent":{"action":"run_command", "value":"/trigger bb.wildColor set 4"}}]
+
+execute as @s run playsound minecraft:block.note_block.bass voice @s

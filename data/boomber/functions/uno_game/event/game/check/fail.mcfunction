@@ -8,6 +8,6 @@ execute as @s if score #bb.uno.color bb.variable matches 1 run function boomber:
 execute as @s if score #bb.uno.color bb.variable matches 2 run function boomber:uno_game/event/draw/blue
 execute as @s if score #bb.uno.color bb.variable matches 3 run function boomber:uno_game/event/draw/yellow
 
-execute as @s if score #bb.uno.color bb.variable matches 4 if score #bb.uno.card bb.variable matches 12 run drop player @s loot boomber:items/uno_game/wild/draw_4
+execute as @s if score #bb.uno.color bb.variable matches 4 if score #bb.uno.card bb.variable matches 12 run loot give @s loot boomber:items/uno_game/wild/draw_4
 execute as @s run data modify entity @e[type=armor_stand,tag=boomber.uno_game.table,limit=1,distance=..8,sort=nearest] ArmorItems[{tag:{boomber:{id:"uno_table"}}}].tag.boomber.uno_game.checking_card set value {}
 execute as @s as @e[type=armor_stand,tag=boomber.uno_game.table,limit=1,distance=..8,sort=nearest] run tag @s remove boomber.uno_game.playing
